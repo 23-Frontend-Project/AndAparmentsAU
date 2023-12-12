@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "14.0.3",
+    "next-themes": "^0.2.1",
     "node.js": "^0.0.1-security",
     "react": "^18",
     "react-dom": "^18"
