@@ -1,35 +1,15 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-export default function Home() {
+export default function Card() {
   return (
-    <div>
-      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2x  ">
-        <div class="md:flex">
-          <div class="md:shrink-0">
-            <div
-              class="h-48 w-full object-cover md:h-full md:w-48 bg-sky-500"
-              src="https://nestmoodle.xyz/pluginfile.php/1/core_admin/logocompact/300x300/1698062409/NHS.d046134c.png"
-              alt="Modern building architecture"
-            />
-          </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-              Company retreats
-            </div>
-            <a
-              href="#"
-              class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
-            >
-              Incredible accommodation for your team
-            </a>
-            <p class="mt-2 text-slate-500">
-              Looking to take your team away on a retreat to enjoy awesome food
-              and take in some sunshine? We have a list of places to do just
-              that.
-            </p>
-          </div>
-        </div>
+    <div className='w-[240px] h-[330px] bg-white'>
+      <img src="https://hostaway-platform.s3.us-west-2.amazonaws.com/listing/33029-160786-FgrOds-oBmQsYPUVbQGxgF2l0oq5tvNXZL6qECsNNX8-6445e3072e7e9-small" alt="" className='w-full h-6/10' />
+      <div className='text-black w-full h-4/10 flex justify-center items-center flex-col'>
+        <br />
+        <h1 className='font-bold'>Luxe Modern Two Bedroom</h1>
+        <h1 className='font-bold'>  Apartment - And Apartments</h1>
+        <p className='text-gray-700'>Australia</p>
       </div>
     </div>
   );
