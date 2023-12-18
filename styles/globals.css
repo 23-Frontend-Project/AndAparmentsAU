@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.cdnfonts.com/css/thor-ragnarok');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000;
+}
+
+.book-now__circle {
+  background-image: url(//andapartments.com.au/wp-content/themes/and-apartments/./images/book-now-circle.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 144px;
+  height: 144px;
+  position: absolute;
+  top: 41.5%;
+  right: 16%;
+  bottom: 0;
+  pointer-events: none;
+  animation-name: book-now;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes book-now {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.book-now__label {
+  display: block;
+  text-align: center;
+  width: 50%;
+}

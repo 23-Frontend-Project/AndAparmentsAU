@@ -1,35 +1,19 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-export default function Home() {
+export default function Card({ Name, Location, ImageURL }) {
   return (
-    <div>
-      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2x  ">
-        <div class="md:flex">
-          <div class="md:shrink-0">
-            <div
-              class="h-48 w-full object-cover md:h-full md:w-48 bg-sky-500"
-              src="https://nestmoodle.xyz/pluginfile.php/1/core_admin/logocompact/300x300/1698062409/NHS.d046134c.png"
-              alt="Modern building architecture"
-            />
-          </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-              Company retreats
-            </div>
-            <a
-              href="#"
-              class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
-            >
-              Incredible accommodation for your team
-            </a>
-            <p class="mt-2 text-slate-500">
-              Looking to take your team away on a retreat to enjoy awesome food
-              and take in some sunshine? We have a list of places to do just
-              that.
-            </p>
-          </div>
-        </div>
+    <div className="w-full h-[330px] bg-white">
+      <div className={'h-3/5 w-full overflow-hidden cursor-pointer'}>
+        <img
+          className="hover:scale-110 h-full w-full object-cover transition"
+          src={ImageURL}
+          alt="im"
+        />
+      </div>
+      <div className="text-black w-full h-2/5 flex items-center pt-6 flex-col">
+        <h1 className="font-bold text-center text-sm">{Name}</h1>
+        <p className="text-gray-700 text-sm">{Location}</p>
       </div>
     </div>
   );
